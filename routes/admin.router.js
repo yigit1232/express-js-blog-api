@@ -1,0 +1,12 @@
+const router = require('express').Router()
+const adminController = require('../controllers/admin.controller')
+router.post('/add/category',adminController.addCategory)
+router.delete('/delete/category/:id',adminController.deleteCategory)
+router.patch('/update/category/:id',adminController.updateCategory)
+router.post('/add/tag',adminController.addTag)
+router.delete('/delete/tag/:id',adminController.deleteTag)
+router.patch('/update/tag/:id',adminController.updateTag)
+router.post('/add/post',adminController.addPost)
+router.delete('/delete/post/:id',adminController.deletePost)
+router.patch('/update/post/:id',adminController.updatePost)
+module.exports=router
